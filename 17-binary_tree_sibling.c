@@ -10,8 +10,8 @@ if (node == NULL || node->parent == NULL)
 return (NULL);
 
 if (node->parent->left == node)
-        return node->parent->right;
-    else if (node->parent->right == node)
-        return node->parent->left;
-    return(NULL);
+return (node->parent->right);
+else if (node->parent->right == node)
+return (node->parent->left);
+return (NULL);
 }
